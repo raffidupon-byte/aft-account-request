@@ -1,28 +1,27 @@
-# Place account request modules here
-# Example:
-# module "example_account" {
-#   source = "./modules/aft-account-request"
-#   
-#   control_tower_parameters = {
-#     AccountEmail              = "example@yourdomain.com"
-#     AccountName               = "Example-Account"
-#     ManagedOrganizationalUnit = "Sandbox"
-#     SSOUserEmail              = "admin@yourdomain.com"
-#     SSOUserFirstName          = "Admin"
-#     SSOUserLastName           = "User"
-#   }
-#   
-#   account_tags = {
-#     Environment = "Development"
-#   }
-#   
-#   change_management_parameters = {
-#     change_requested_by = "DevOps Team"
-#     change_reason       = "Testing AFT"
-#   }
-#   
-#   custom_fields = {}
-#   
-#   account_customizations_name = ""
-# }
+# Test Account - Simplest possible example
+module "test_account" {
+  source = "./modules/aft-account-request"
 
+  control_tower_parameters = {
+    AccountEmail              = "sam1983fr@gmail.com"  # CHANGE THIS - Must be unique
+    AccountName               = "Test-Account-001"
+    ManagedOrganizationalUnit = "Sandbox"                     # Must exist in your Control Tower
+    SSOUserEmail              = "ghazoo@live.com"          # Your email for SSO access
+    SSOUserFirstName          = "Test"
+    SSOUserLastName           = "User"
+  }
+
+  account_tags = {
+    Environment = "Test"
+    ManagedBy   = "AFT"
+  }
+
+  change_management_parameters = {
+    change_requested_by = "dumbbel dupond"
+    change_reason       = "Testing AFT account provisioning"
+  }
+
+  custom_fields = {}
+
+  account_customizations_name = ""  # No customizations - just basic account
+}
