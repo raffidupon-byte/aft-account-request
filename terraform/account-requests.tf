@@ -11,7 +11,7 @@ module "account_request_01" {
   }
 
   account_tags = {
-    "ABC:Owner"       = "sam1983fr+fortest@gmail.com"
+    "ABC:Owner"       = "sam1983fr+fortest+2@gmail.com"
     "ABC:Division"    = "ENT"
     "ABC:Environment" = "Dev"
     "ABC:CostCenter"  = "123456"
