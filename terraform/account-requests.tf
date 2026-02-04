@@ -8,6 +8,7 @@ module "account_request_01" {
     SSOUserEmail              = "sam1983fr+fortest+3@gmail.com"
     SSOUserFirstName          = "sami"
     SSOUserLastName           = "abboud"
+    
   }
 
   account_tags = {
