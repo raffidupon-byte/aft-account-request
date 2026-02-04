@@ -2,12 +2,12 @@ module "account_request_01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "{{ACCOUNT EMAIL}}"
-    AccountName               = "{{ACCOUNT NAME}}"
-    ManagedOrganizationalUnit = "{{OU NAME}}" 
-    SSOUserEmail              = "{{ACCOUNT SSO EMAIL}}"
-    SSOUserFirstName          = "{{ACCOUNT SSO FIRST NAME}}"
-    SSOUserLastName           = "{{ACCOUNT SSO LAST NAME}}"
+    AccountEmail              = "sam1983fr+fortest+2@gmail.com"
+    AccountName               = "sami_first_account"
+    ManagedOrganizationalUnit = "SANDBOX" 
+    SSOUserEmail              = "sam1983fr+fortest+2@gmail.com"
+    SSOUserFirstName          = "sami"
+    SSOUserLastName           = "abboud"
   }
 
   account_tags = {
